@@ -1,62 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>DAY 1</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="picture.css">
-    <link rel="stylesheet" href="card.css">
-    <style>
-    body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
-    .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
-    .fa-anchor,.fa-coffee {font-size:200px}
-    </style>
-  </head>
+<head>
+  <title>DAY 1</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="picture.css">
+  <link rel="stylesheet" href="card.css">
+  <link rel="stylesheet" href="map.css">
+  <style>
+    body, h1, h2, h3, h4, h5, h6 {
+      font-family: "Lato", sans-serif;
+    }
+    .w3-bar, h1, button {
+      font-family: "Montserrat", sans-serif;
+    }
+    .fa-anchor, .fa-coffee {
+      font-size: 200px;
+    }
+    .navbar {
+      overflow: hidden;
+      background-color: #333;
+    }
+    .navbar a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    .navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    .navbar a.active {
+      background-color: #4CAF50;
+      color: white;
+    }
+    .navbar .icon {
+      display: none;
+    }
+    @media screen and (max-width: 600px) {
+      .navbar a:not(:first-child) {
+        display: none;
+      }
+      .navbar a.icon {
+        float: right;
+        display: block;
+      }
+      .navbar.responsive {
+        position: relative;
+      }
+      .navbar.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      .navbar.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+    }
+    /* Responsive Layout */
+    @media screen and (max-width: 768px) {
+      header {
+        padding: 80px 16px;
+      }
+      .car__image img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
 <body>
 
 <!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-red w3-card w3-left-align w3-large">
-    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Home</a>
-    <a href="day1.html" class="w3-bar-item w3-button w3-padding-large w3-white">Day 1</a>
-    <a href="day2.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Day 2</a>
-    <a href="day3.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Day 3</a>
-    <a href="day4.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Day 4</a>
-    <a href="day5.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Day 5</a>
-    <a href="day6.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Day 6</a>
-    <a href="day7.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Day 7</a>
-    <a href="day8.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Day 8</a>
-  </div>
-
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
-    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
-    <a href="day1.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Day 1</a>
-    <a href="day2.html" class="w3-bar-item w3-button w3-padding-large">Day 2</a>
-    <a href="day3.html" class="w3-bar-item w3-button w3-padding-large">Day 3</a>
-    <a href="day4.html" class="w3-bar-item w3-button w3-padding-large">Day 4</a>
-    <a href="day5.html" class="w3-bar-item w3-button w3-padding-large">Day 5</a>
-    <a href="day6.html" class="w3-bar-item w3-button w3-padding-large">Day 6</a>
-    <a href="day7.html" class="w3-bar-item w3-button w3-padding-large">Day 7</a>
-    <a href="day8.html" class="w3-bar-item w3-button w3-padding-large">Day 8</a>
-  </div>
+<div class="navbar" id="myNavbar">
+  <a href="index.html">Home</a>
+  <a href="day1.html" class="active">Day 1</a>
+  <a href="day2.html">Day 2</a>
+  <a href="day3.html">Day 3</a>
+  <a href="day4.html">Day 4</a>
+  <a href="day5.html">Day 5</a>
+  <a href="day6.html">Day 6</a>
+  <a href="day7.html">Day 7</a>
+  <a href="day8.html">Day 8</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
 </div>
 
 <!-- Header -->
 <header class="w3-container w3-red w3-center" style="padding:128px 16px">
-<h1 class="w3-margin w3-jumbo">京成電鐵第一天</h1>
-<iframe src=https://cdn.discordapp.com/attachments/878607545453903893/1118691309583085580/image.png width="330" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-<p class="w3-xlarge">第一天的行程規劃</p>
-<button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">啟程吧</button>
+  <h1 class="w3-margin w3-jumbo">京成電鐵第一天</h1>
+  <div class="image-container">
+    <img src="https://cdn.discordapp.com/attachments/878607545453903893/1118691309583085580/image.png" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+  </div>
+  <p class="w3-xlarge">第一天的行程規劃</p>
+  <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">啟程吧</button>
 </header>
 
 <!-- First Grid -->
-<div class="w3-row-padding w3-padding-64 w3-container">
+<div class="w3-row-padding w3-padding-64 w3-container w3-light-green">
   <div class="w3-content">
     <div class="w3-twothird">
       <h1>第一站</h1>
@@ -64,23 +116,68 @@
       <p>⨠ 領取東京地鐵實體車票&skyliner車票，接著前往上野。</p>
     </div>
     <div class="w3-third w3-center">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d207340.05633994445!2d139.91444717994656!3d35.70928531705913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x6022f379d1bd3757%3A0xd56e29a162771aa1!2z5oiQ55Sw5ZyL6Zqb5qmf5aC0IChOUlQpMS0xIEZ1cnVnb21lLCBOYXJpdGEsIENoaWJhIDI4Mi0wMDA05pel5pys!3m2!1d35.7721823!2d140.39285479999998!4m5!1s0x60188e9e93d3060b%3A0x6c89b36d7b4f9244!2z5pel5pys5p2x5Lqs6YO95Y-w5p2x5Y2A5LiK6YeOIDcgQ2hvbWXiiJIxLCDkuIrph47pp4U!3m2!1d35.7141672!2d139.7774091!5e0!3m2!1szh-TW!2stw!4v1686788252634!5m2!1szh-TW!2stw" width="330" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="map-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d207340.05633994445!2d139.91444717994656!3d35.70928531705913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x6022f379d1bd3757%3A0xd56e29a162771aa1!2z5oiQ55Sw5ZyL6Zqb5qmf5aC0IChOUlQpMS0xIEZ1cnVnb21lLCBOYXJpdGEsIENoaWJhIDI4Mi0wMDA05pel5pys!3m2!1d35.7721823!2d140.39285479999998!4m5!1s0x60188e9e93d3060b%3A0x6c89b36d7b4f9244!2z5pel5pys5p2x5Lqs6YO95Y-w5p2x5Y2A5LiK6YeOIDcgQ2hvbWXiiJIxLCDkuIrph47pp4U!3m2!1d35.7141672!2d139.7774091!5e0!3m2!1szh-TW!2stw!4v1686788252634!5m2!1szh-TW!2stw" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
+  </div>
   </div>
 </div>
 
 <!-- Second Grid -->
 <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
   <div class="w3-content">
-    <div class="w3-third w3-center">
-    </div>
     <div class="w3-twothird">
       <h1>第二站</h1>
-      <p>⨠ </p>
+      <p>⨠ 前往淺草</br>
+      ⨠ 前往晴空塔</br>
+      ⨠ 前往淺草寺&商店街
+    </p>
     </div>
+  <div class="w3-third w3-center">
+    <div class="map-container">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d12958.030791164656!2d139.77407411853258!3d35.71373053188648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x60188e9e8b28ebb3%3A0x9bba88ca3db2f4be!2z5pel5pys5p2x5Lqs6YO95Y-w5p2x5Y2A5LiK6YeO!3m2!1d35.7087296!2d139.7741538!4m5!1s0x60188ec2047f5333%3A0x7c84fd3881c74067!2z5pel5pys44CSMTExLTAwMzIg5p2x5Lqs6YO95Y-w5p2x5Y2A5re66I2J!3m2!1d35.7185858!2d139.7958849!5e0!3m2!1szh-TW!2stw!4v1687076031512!5m2!1szh-TW!2stw"style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
+  </div>
+ </div>
 </div>
 
+<!-- Third Grid -->
+<div class="w3-row-padding w3-light-blue w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+    </div>
+    <div class="w3-twothird">
+      <h1>第三站</h1>
+      <p>⨠ 前往淺草</br>
+      ⨠ 前往晴空塔</br>
+      ⨠ 前往淺草寺&商店街
+    </p>
+    </div>
+  <div class="w3-third w3-center">
+    <div class="map-container">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d12958.030791164656!2d139.77407411853258!3d35.71373053188648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x60188e9e8b28ebb3%3A0x9bba88ca3db2f4be!2z5pel5pys5p2x5Lqs6YO95Y-w5p2x5Y2A5LiK6YeO!3m2!1d35.7087296!2d139.7741538!4m5!1s0x60188ec2047f5333%3A0x7c84fd3881c74067!2z5pel5pys44CSMTExLTAwMzIg5p2x5Lqs6YO95Y-w5p2x5Y2A5re66I2J!3m2!1d35.7185858!2d139.7958849!5e0!3m2!1szh-TW!2stw!4v1687076031512!5m2!1szh-TW!2stw" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  </div>
+ </div>
+</div>
+
+<!-- forurth Grid -->
+<div class="w3-row-padding w3-yellow w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+    </div>
+    <div class="w3-twothird">
+      <h1>第四站</h1>
+      <p>⨠ 前往綾瀨
+    </p>
+    </div>
+  <div class="w3-third w3-center">
+    <div class="map-container">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d25906.500363364234!2d139.7757149047645!3d35.74312201922833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x60188ec2047f5333%3A0x7c84fd3881c74067!2z5pel5pys44CSMTExLTAwMzIg5p2x5Lqs6YO95Y-w5p2x5Y2A5re66I2J!3m2!1d35.7185858!2d139.7958849!4m5!1s0x60188fc794e907d3%3A0x11992590364baab4!2z5pel5pys5p2x5Lqs6YO96Laz56uL5Y2A57a-54Co!3m2!1d35.7675988!2d139.8265777!5e0!3m2!1szh-TW!2stw!4v1687076440554!5m2!1szh-TW!2stw" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+ </div>
+</div>
 <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
 <footer class="w3-container w3-padding-64 w3-center w3-opacity"> 
   <div class="w3-xlarge w3-padding-32" style="background-image:url('https://i.gifer.com/VTc.gif');">
@@ -97,16 +194,15 @@
  <!-- Footer end. -->
  </footer>
 
-<script>
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
+ <script>
+  function myFunction() {
+    var x = document.getElementById("myNavbar");
+    if (x.className === "navbar") {
+      x.className += " responsive";
+    } else {
+      x.className = "navbar";
+    }
   }
-}
 </script>
 
 </body>
