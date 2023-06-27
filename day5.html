@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="picture.css">
   <link rel="stylesheet" href="card.css">
   <link rel="stylesheet" href="map.css">
+  <link rel="stylesheet" href="gototop.css">
   <style>
     body, h1, h2, h3, h4, h5, h6 {
       font-family: "Lato", sans-serif;
@@ -82,6 +83,7 @@
 <body>
 
 <!-- Navbar -->
+<a name="top"></a>
 <div class="navbar" id="myNavbar">
   <a href="index.html">Home</a>
   <a href="day1.html">Day 1</a>
@@ -97,6 +99,16 @@
   </a>
 </div>
 
+<div class="sidebar">
+  <nav class="sidebar-nav">
+    <ul>
+      <li><a href="#top">≡</a></li>
+      <li><a href="#1">①</a></li>
+      <li><a href="#2">②</a></li>
+      <li><a href="#3">③</a></li>
+    </ul>
+  </nav>
+</div>
 <!-- Header -->
 <header class="w3-container w3-red w3-center" style="padding:5px 16px">
 <link rel="stylesheet" href="picture.css">
@@ -139,6 +151,7 @@
 </header>
 
 <!-- First Grid -->
+<a name="1"></a>
 <div class="w3-row-padding w3-light-green w3-padding-64 w3-container">
   <div class="w3-content">
     <div class="w3-twothird">
@@ -147,12 +160,15 @@
     </div>
     <div class="w3-third w3-center">
       <div class="map-container">
+      <iframe src="https://www.google.com/maps/d/embed?mid=11F6FxvMyQhtHgBGPvI--WqzSwDQ8Wn7c&hl=en&ehbc=2E312F" width="640" height="480"></iframe>
+      </div></br><div class="map-container">
       <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d51980.630067886086!2d138.65909815520448!3d35.48475464854233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x601960d61a59b2af%3A0x338f919ddc8539a1!2s2%20Kamiyoshida%2C%20Fujiyoshida%2C%20Yamanashi%20403-0005%E6%97%A5%E6%9C%AC!3m2!1d35.4733954!2d138.7936905!4m5!1s0x601be703e2422c4b%3A0x476c81d56a3b64a9!2z5pel5pys5bGx5qKo57ij5a-M5aOr5rKz5Y-j5rmW55S6IE1vdG9zdSwg5pys5qCW5rmW!3m2!1d35.463192899999996!2d138.6039175!5e0!3m2!1szh-TW!2stw!4v1686943460282!5m2!1szh-TW!2stw" width="330" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
   </div>
 </div>
 </div>
 <!-- Second Grid -->
+<a name="2"></a>
 <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
   <div class="w3-content">
     <div class="w3-twothird">
@@ -167,6 +183,7 @@
 </div>
 </div>
 <!-- Third Grid -->
+<a name="3"></a>
 <div class="w3-row-padding w3-light-blue w3-padding-64 w3-container">
   <div class="w3-content">
     <div class="w3-twothird">
@@ -208,6 +225,23 @@
     }
   }
 </script>
-
 </body>
+<script src="jquery-3.3.1.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $(window).scroll(function() {
+      var scrollPos = $(document).scrollTop();
+      $('.sidebar-nav a').each(function() {
+        var currLink = $(this);
+        var refElement = $(currLink.attr('href'));
+        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+          $('.sidebar-nav a').removeClass('active');
+          currLink.addClass('active');
+        } else {
+          currLink.removeClass('active');
+        }
+      });
+    });
+  });
+</script>
 </html>

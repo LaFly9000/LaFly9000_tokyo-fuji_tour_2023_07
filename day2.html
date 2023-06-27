@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="picture.css">
   <link rel="stylesheet" href="card.css">
   <link rel="stylesheet" href="map.css">
+  <link rel="stylesheet" href="gototop.css">
   <style>
     body, h1, h2, h3, h4, h5, h6 {
       font-family: "Lato", sans-serif;
@@ -82,6 +83,7 @@
 <body>
 
 <!-- Navbar -->
+<a name="top"></a>
 <div class="navbar" id="myNavbar">
   <a href="index.html">Home</a>
   <a href="day1.html">Day 1</a>
@@ -97,6 +99,17 @@
   </a>
 </div>
 
+<div class="sidebar">
+  <nav class="sidebar-nav">
+    <ul>
+      <li><a href="#top">≡</a></li>
+      <li><a href="#1">①</a></li>
+      <li><a href="#2">②</a></li>
+      <li><a href="#3">③</a></li>
+      <li><a href="#4">④</a></li>
+    </ul>
+  </nav>
+</div>
 <!-- Header -->
 <header class="w3-container w3-red w3-center" style="padding:5px 16px">
 <link rel="stylesheet" href="picture.css">
@@ -140,9 +153,11 @@
 </header>
 
 <!-- First Grid -->
+<a name="1"></a>
 <div class="w3-row-padding w3-light-green w3-padding-64 w3-container">
   <div class="w3-content">
     <div class="w3-twothird">
+      <a name="1"></a>
       <h1>第一站</h1>
       <p>⨠ 從綾瀨至北千住(C)</br>
         ⨠ 北千住至人形町(H)</br>
@@ -164,46 +179,66 @@
 </div>
 </div>
 <!-- Second Grid -->
+<a name="2"></a>
 <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
   <div class="w3-content">
     <div class="w3-twothird">
       <h1>第二站</h1>
-      <p>⨠ 大崎至大船[JS]</br>
-        ⨠ 大船搭乘湘南單軌列車(大船~湘南江之島車站)</br>
-        ⨠ 湘南江之島車站走路至江之島
+      <p>⨠ 大崎至鐮倉[JS]</br>
+        ⨠ 參觀八幡宮->小町通->鎌倉大佛</br>
+        ⨠ 從鐮倉搭乘江之島電鐵到長谷</br>
+        ⨠ 參觀長谷寺</br>
+        ⨠ 從鐮倉搭乘江之島電鐵到長谷</br>
+        ⨠ 從長谷搭乘江之島電鐵到江之島車站</br>
       </p>
     </div>
     <div class="w3-third w3-center">
       <div class="map-container" style="border: 5px solid red;">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3786.8740628126834!2d139.52914336025066!3d35.35323016570488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018455e464e2373%3A0xdab8b723990b2f92!2z5aSn6Ii5!5e0!3m2!1szh-TW!2stw!4v1687324371512!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d104193.05204019412!2d139.59530835931682!3d35.305164575396546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x60188af43b9fc7f5%3A0xc9cec030c12bcf76!2z5pel5pysIFRva3lvLCBTaGluYWdhd2EgQ2l0eSwgxYxzYWtpLCAxLWNoxY1tZeKIku-8ku-8keKIkjTlpKfltI7ou4rnq5k!3m2!1d35.6198513!2d139.7281892!4m5!1s0x601845c22a4f73df%3A0xc7e93a3e84fb0e0e!2z6ZCu5YCJIDEtMTUgT25hcmltYWNoaSwgS2FtYWt1cmEsIEthbmFnYXdhIDI0OC0wMDEy5pel5pys!3m2!1d35.3190156!2d139.5504157!5e0!3m2!1szh-TW!2stw!4v1687896076280!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div></br><div class="map-container">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d26048.194907140078!2d139.46246742718847!3d35.30537610342485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m5!1s0x60184f020450cc41%3A0x654ac82ca694d3cb!2z5rmY5Y2X5rGf5LmL5bO26LuK56uZIDMtY2jFjW1lLTE1IEthdGFzZSwgRnVqaXNhd2EsIEthbmFnYXdhIDI1MS0wMDMy5pel5pys!3m2!1d35.3117812!2d139.4877095!4m5!1s0x60184ee5ce045bbd%3A0x356c5f13bb58dfb3!2z5rGf5LmL5bO25rW36KCf54et5bGV5pyb54eI5aGUIOaXpeacrOOAkjI1MS0wMDM2IEthbmFnYXdhLCBGdWppc2F3YSwgRW5vc2hpbWEsIDIgQ2hvbWXiiJIz4oiSMjg!3m2!1d35.2997417!2d139.478425!5e0!3m2!1szh-TW!2stw!4v1687324691385!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
+        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1_FyVN-Qb7EShucRUoaD1wJpTbwMWpXU&ehbc=2E312F"></iframe>
+    </div></br><div class="map-container" style="border: 5px solid green">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d104161.9047255802!2d139.43735588449397!3d35.32934337003689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x601845c22a4f73df%3A0xc7e93a3e84fb0e0e!2z6ZCu5YCJIDEtMTUgT25hcmltYWNoaSwgS2FtYWt1cmEsIEthbmFnYXdhIDI0OC0wMDEy5pel5pys!3m2!1d35.3190156!2d139.5504157!4m5!1s0x60184f020450cc41%3A0x654ac82ca694d3cb!2z5pel5pys56We5aWI5bed57ij6Jek5r6k5biCIEthdGFzZSwgMyBDaG9tZeKIkjE1LCDmuZjljZfmsZ_kuYvls7bou4rnq5k!3m2!1d35.3117812!2d139.4877095!5e0!3m2!1szh-TW!2stw!4v1687896178801!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
   </div>
 </div>
 </div>
 <!-- Third Grid -->
+<a name="3"></a>
 <div class="w3-row-padding w3-light-blue w3-padding-64 w3-container">
   <div class="w3-content">
     <div class="w3-twothird">
       <h1>第三站</h1>
-      <p>⨠ xxxxxxxxxx</p>
+      <p>⨠ 江之島車站走路至江之島</br>
+        ⨠ 參觀邊津宮->尋找(SHIRASU)銀魚蓋飯->海蠟燭展望燈塔</br>
+        ⨠ 從江之島車站搭乘湘南單軌到大船
+      </p>
     </div>
     <div class="w3-third w3-center">
-      xxxxxxxxx
-    </div>
+    </br><div class="map-container">
+      <iframe src="https://www.google.com/maps/d/u/0/embed?mid=188mn4xqjzkZPYKCgH11owNptuI35_rc&ehbc=2E312F" width="640" height="480"></iframe>
+    </div></br><div class="map-container" style="border: 5px solid gray">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d73661.63862128794!2d139.43267559624525!3d35.32050823700276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x60184ee6a0890aa5%3A0x4fe5988514a5aec!2z5pel5pys44CSMjUxLTAwMzYg56We5aWI5bed57ij6Jek5r6k5biC5rGf5LmL5bO2!3m2!1d35.2990992!2d139.4809269!4m5!1s0x6018455e464e2373%3A0xdab8b723990b2f92!2z5pel5pys56We5aWI5bed57ij6ZCu5YCJ5biCIE9mdW5hLCAxIENob21l4oiSMSwg5aSn6Ii5!3m2!1d35.3540475!2d139.5312989!5e0!3m2!1szh-TW!2stw!4v1687896975402!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
+  </div>
+</div>
 </div>
 
 <!-- fourth Grid -->
+<a name="4"></a>
 <div class="w3-row-padding w3-yellow w3-padding-64 w3-container">
   <div class="w3-content">
     <div class="w3-twothird">
       <h1>第四站</h1>
-      <p>⨠ xxxxxxxxx</p>
+      <p>⨠ 大船至東京車站</br>
+        ⨠ 東京車站走路到二重橋前站至綾瀨</br>
+        ⨠ 二重橋前站至綾瀨
+      </p>
     </div>
     <div class="w3-third w3-center">
-      xxxxxxxxxxxxxxx
+      <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d415458.87761936913!2d139.6830382!3d35.55932085000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x6018455e464e2373%3A0xdab8b723990b2f92!2z5pel5pys56We5aWI5bed57ij6ZCu5YCJ5biCIE9mdW5hLCAxIENob21l4oiSMSwg5aSn6Ii5!3m2!1d35.3540475!2d139.5312989!4m5!1s0x60188f96604472af%3A0xfca45f2acb1a4bc6!2zUFJJU00gQ09VUlQg57a-54CsLCDvvKLvvLLvvKHvvKXvvK3vvKHvvLLvvKjvvKnvvKzvvKwgMSBDaG9tZS0xIFRvd2EsIOi2s-eri-WNgOadseS6rOmDveaXpeacrA!3m2!1d35.7637334!2d139.83670709999998!5e0!3m2!1szh-TW!2stw!4v1687905965293!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
     </div>
   </div>
 </div>
@@ -236,4 +271,22 @@
 </script>
 
 </body>
+<script src="jquery-3.3.1.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $(window).scroll(function() {
+      var scrollPos = $(document).scrollTop();
+      $('.sidebar-nav a').each(function() {
+        var currLink = $(this);
+        var refElement = $(currLink.attr('href'));
+        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+          $('.sidebar-nav a').removeClass('active');
+          currLink.addClass('active');
+        } else {
+          currLink.removeClass('active');
+        }
+      });
+    });
+  });
+</script>
 </html>
