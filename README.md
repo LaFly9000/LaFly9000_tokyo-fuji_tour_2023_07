@@ -1,2 +1,2 @@
 ﻿# tokyo-trip
- https://tim30807648.github.io/tokyo.trip.dock.io/index.html
+https://lafly9000.github.io/LaFly9000_tokyo-fuji_tour_2023_07/
